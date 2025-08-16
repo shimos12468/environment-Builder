@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aff5675399ac3940a24287480c6e5e5, type: 3}
+  m_Name: object database
+  m_EditorClassIdentifier: 
+  objectData:
+  - Name: Balcony
+    id: 0
+    size: {x: 1, y: 3}
+    prefab: {fileID: 7841067382735406222, guid: 0535d442b0f51eb43a100f61f11ea982,
+      type: 3}
+  - Name: Balcony light
+    id: 1
+    size: {x: 1, y: 3}
+    prefab: {fileID: 679945122429199935, guid: 32faf472165448b4f85d2e78eb0e00e3, type: 3}
+  - Name: Bathroom Mirror
+    id: 2
+    size: {x: 1, y: 3}
+    prefab: {fileID: 1042476542068199991, guid: e7e7198cae67eec43ac1fb7d22419d7c,
+      type: 3}
+  - Name: Bathroom Sink
+    id: 3
+    size: {x: 1, y: 3}
+    prefab: {fileID: 6154928666302972159, guid: 926494df49b8f624eb97706d7e23332a,
+      type: 3}
+  - Name: Bathtub
+    id: 4
+    size: {x: 1, y: 3}
+    prefab: {fileID: 4846587292744321834, guid: fa40e16b9956aeb4db45df4fd5f02908,
+      type: 3}
+  - Name: Bed
+    id: 5
+    size: {x: 1, y: 3}
+    prefab: {fileID: 7127017307603221673, guid: eb5afd7d421243f42b1ab4f7d6cc849f,
+      type: 3}
+  - Name: BedRoomCabinet
+    id: 6
+    size: {x: 1, y: 3}
+    prefab: {fileID: 3137143457233857137, guid: 9bdd5e3f1a49f2d4b945817e07e2e66c,
+      type: 3}
+  - Name: BedRoom Drawer
+    id: 7
+    size: {x: 1, y: 3}
+    prefab: {fileID: 1467234145666080433, guid: eab44f80799766e498a38d630570f7b8,
+      type: 3}
+  - Name: BedRoomShelf2
+    id: 8
+    size: {x: 1, y: 3}
+    prefab: {fileID: 4878876045454690653, guid: 4fcf794d9a52bc94595e5394ecf26006,
+      type: 3}
+  - Name: chair3
+    id: 9
+    size: {x: 1, y: 3}
+    prefab: {fileID: 4186199534008218826, guid: f9f7e9fb1481fa7448800f4e5e9df503,
+      type: 3}
+  - Name: ComfyChair
+    id: 10
+    size: {x: 1, y: 3}
+    prefab: {fileID: 4389107179069049578, guid: 8ec1ce5d545c2e04f826cbcaeb18ea20,
+      type: 3}
+  - Name: Couch
+    id: 11
+    size: {x: 1, y: 3}
+    prefab: {fileID: 7097083482354443118, guid: 3c54235b9216dcb4ab6f70f6bd77d013,
+      type: 3}
+  - Name: Curtin
+    id: 12
+    size: {x: 1, y: 3}
+    prefab: {fileID: 1417466735698543714, guid: 180f0927fe7cb4542909646ac0aaf7a3,
+      type: 3}
+  - Name: Drawer
+    id: 13
+    size: {x: 1, y: 3}
+    prefab: {fileID: 6181981831988829391, guid: 91fcc8e1f77f485438ea2f0adff77c61,
+      type: 3}
+  - Name: Fridge
+    id: 14
+    size: {x: 1, y: 3}
+    prefab: {fileID: 4760881052100917810, guid: 0f81ae4efbb3ed6478667ea159e27d9a,
+      type: 3}
+  - Name: Hanger
+    id: 15
+    size: {x: 1, y: 3}
+    prefab: {fileID: 9163331835014186288, guid: 829e6c6a5329e9b4087408b65391e708,
+      type: 3}
+  - Name: Kitchen
+    id: 16
+    size: {x: 1, y: 3}
+    prefab: {fileID: 1381973461499596870, guid: cdb1fcb8d3e64ec459086c87dc4cfd2a,
+      type: 3}
+  - Name: MetalChair
+    id: 17
+    size: {x: 1, y: 3}
+    prefab: {fileID: 4280261884778545227, guid: 40f1a81125884824abd2517bfc7892a4,
+      type: 3}
+  - Name: Mirror
+    id: 18
+    size: {x: 1, y: 3}
+    prefab: {fileID: 9154111857029963049, guid: 49186b85b4e86c7408d6922bcd01349e,
+      type: 3}
+  - Name: Office
+    id: 19
+    size: {x: 1, y: 3}
+    prefab: {fileID: 5541540380010965362, guid: c1a5150e00b9c6e45b9c931b135ebf1c,
+      type: 3}
+  - Name: Plant
+    id: 20
+    size: {x: 1, y: 3}
+    prefab: {fileID: 7765326684515854351, guid: e70f18157be0e074f956bc46c5b7aebc,
+      type: 3}
+  - Name: Shelf
+    id: 21
+    size: {x: 1, y: 3}
+    prefab: {fileID: 3828574814914183916, guid: 6a65c85ee6dae8648a4a83735d69203f,
+      type: 3}
+  - Name: Shower
+    id: 22
+    size: {x: 1, y: 3}
+    prefab: {fileID: 4993062108049018622, guid: 2a140c2a0e72d7a4c80e140c1f2ceb62,
+      type: 3}
+  - Name: ShowerDoor
+    id: 23
+    size: {x: 1, y: 3}
+    prefab: {fileID: 2682667362887010684, guid: 20c5b042f1b9cd94a99c4d54829ba0d7,
+      type: 3}
+  - Name: Sink
+    id: 24
+    size: {x: 1, y: 3}
+    prefab: {fileID: 3620541484257701245, guid: e4ca348b1f715c944949f1dd13324699,
+      type: 3}
+  - Name: SmallPlant
+    id: 25
+    size: {x: 1, y: 3}
+    prefab: {fileID: 423166992667519037, guid: 76ce79480bbce724087aa7d7c51a7610, type: 3}
+  - Name: Table
+    id: 26
+    size: {x: 1, y: 3}
+    prefab: {fileID: 8797606518309553696, guid: 30bb9ee4ab8d4bb4bb67ce77ee12eacf,
+      type: 3}
+  - Name: TrashCan
+    id: 27
+    size: {x: 1, y: 3}
+    prefab: {fileID: 5394261429881328032, guid: c8a2d3725f578484a87b091c0ae7f01d,
+      type: 3}
+  - Name: TV_Setup
+    id: 28
+    size: {x: 1, y: 3}
+    prefab: {fileID: 62358371723508680, guid: d88a292b984a83344aaf9ac918d96f64, type: 3}
+  - Name: WashingMachine
+    id: 29
+    size: {x: 1, y: 3}
+    prefab: {fileID: 313538018060470527, guid: ab48bd9d469f8874290d622cd199d801, type: 3}
+  - Name: Chair
+    id: 30
+    size: {x: 1, y: 1}
+    prefab: {fileID: 4123479160941057218, guid: 9cdef327c9097024991f3fa2d167dd25,
+      type: 3}

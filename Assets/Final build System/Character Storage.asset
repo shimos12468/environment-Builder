@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4ff7a829980ab4d9bcd1a9034ad62a, type: 3}
+  m_Name: Character Storage
+  m_EditorClassIdentifier: 
+  customizations:
+  - option: 0
+    selectedOption: 0100
+  - option: 1
+    selectedOption: 0100
+  - option: 2
+    selectedOption: 0100
+  - option: 3
+    selectedOption: 0100
+  - option: 4
+    selectedOption: 0100
+  - option: 5
+    selectedOption: 0100
+  - option: 6
+    selectedOption: 0100
+  - option: 7
+    selectedOption: 0100
+  - option: 8
+    selectedOption: 0100
+  - option: 9
+    selectedOption: 0100
+  - option: 10
+    selectedOption: 0100
+  - option: 11
+    selectedOption: 0100
+  - option: 12
+    selectedOption: 0100
+  - option: 13
+    selectedOption: 0100
+  - option: 14
+    selectedOption: 0100
+  gender: 0
