@@ -10,7 +10,7 @@ public class CameraSystem : MonoBehaviour
 
     [SerializeField] bool edgeScroll ,dragPan;
     [SerializeField] float fieldOfViewMin = 10, fieldOfViewMax = 50, followOffsetMin = 5f, followOffsetMax =50f;
-    [SerializeField] CinemachineVirtualCamera cinemachineVirtualCamera;
+    [SerializeField] CinemachineCamera cinemachineVirtualCamera;
     
     float targetFieldOfView =50;
     bool dragPanMoveActive;
@@ -44,8 +44,8 @@ public class CameraSystem : MonoBehaviour
         if (Input.GetKey(KeyCode.X)) rotateDirY = -1f;
 
         float offsetSpeed = 10;
-        cinemachineVirtualCamera.GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.y += rotateDirY * Time.deltaTime * offsetSpeed;
-        cinemachineVirtualCamera.GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.y = Mathf.Clamp(cinemachineVirtualCamera.GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset.y, 5, 40);
+        cinemachineVirtualCamera.GetComponent<CinemachineFollow>().FollowOffset.y+= rotateDirY * Time.deltaTime * offsetSpeed;
+        cinemachineVirtualCamera.GetComponent<CinemachineFollow>().FollowOffset.y = Mathf.Clamp(cinemachineVirtualCamera.GetComponent<CinemachineFollow>().FollowOffset.y, 5, 40);
     }
 
     private void HandleCameraMovement()
@@ -147,7 +147,7 @@ public class CameraSystem : MonoBehaviour
 
         targetFieldOfView = Mathf.Clamp(targetFieldOfView, fieldOfViewMin, fieldOfViewMax);
         float zoomSpeed = 10f;
-        cinemachineVirtualCamera.m_Lens.FieldOfView = Mathf.Lerp(cinemachineVirtualCamera.m_Lens.FieldOfView, targetFieldOfView, Time.deltaTime * zoomSpeed);
+        cinemachineVirtualCamera.Lens.FieldOfView = Mathf.Lerp(cinemachineVirtualCamera.Lens.FieldOfView, targetFieldOfView, Time.deltaTime * zoomSpeed);
     }
 
     Vector3 followOffset = Vector3.zero;
@@ -174,6 +174,6 @@ public class CameraSystem : MonoBehaviour
             followOffset = zoomDir * followOffsetMax;
         }
         float zoomSpeed = 10f;
-        cinemachineVirtualCamera.GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset = Vector3.Lerp(cinemachineVirtualCamera.GetCinemachineComponent<CinemachineTransposer>().m_FollowOffset, followOffset, Time.deltaTime* zoomSpeed);
+        cinemachineVirtualCamera.GetComponent<CinemachineFollow>().FollowOffset = Vector3.Lerp(cinemachineVirtualCamera.GetComponent<CinemachineFollow>().FollowOffset, followOffset, Time.deltaTime* zoomSpeed);
     }
 }

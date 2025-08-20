@@ -12,6 +12,7 @@ public class FurnetureIconsScreen : MonoBehaviour
     // Start is called before the first frame update
     public void Init()
     {
+        if (content.transform.childCount > 0) return;
         foreach(var pref in database.objectData)
         {
             var obj = Instantiate(prefab, content.transform);

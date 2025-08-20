@@ -22,7 +22,7 @@ public class BuildingSystem : MonoBehaviour
     [SerializeField]
     [Range(20f, 100f)]
     private float spawnOffset;
-
+    public Transform spawn;
     [Header("Serialized Feilds")]
     [SerializeField] public GridLayout gridLayout;
 
@@ -39,7 +39,7 @@ public class BuildingSystem : MonoBehaviour
     [Header("Input Bindings")]
     [SerializeField] InputAction press, screenPosition;
 
-    [SerializeField] private CinemachineVirtualCamera camera;
+    [SerializeField] private CinemachineCamera camera;
 
     private Modes SelectedMode;
     private Grid grid;
@@ -221,7 +221,7 @@ public class BuildingSystem : MonoBehaviour
     // the y axis with offset forward with default value of 20
     public void Initialize(int id)
     {
-        print(id);
+        
         GameObject prefab = databaseSO.objectData[id].prefab;
         Vector3 CameraCenter = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, Camera.main.nearClipPlane + spawnOffset));
         CameraCenter.y = 0.25f;
@@ -244,7 +244,7 @@ public class BuildingSystem : MonoBehaviour
         {
             position.y = 0.25f;
         }
-        obj.transform.position = position;
+        obj.transform.position = spawn.position;
         placementSystem.SetSelectedObject(obj.GetComponent<PlaceableObject>());
         ObjectDrag drag = obj.AddComponent<ObjectDrag>();
         drag.press = press;

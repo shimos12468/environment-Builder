@@ -1,3 +1,4 @@
+
 using DG.Tweening;
 using System;
 using System.Collections;
@@ -186,7 +187,7 @@ public class PlacementSystem : MonoBehaviour
     // place current object in the grid and accuire wanted positions
     public void PlaceToGrid(GridLayout gridLayout)
     {
-        if (CanBePlaced(gridLayout))
+        if (CanBePlaced(gridLayout)&&objectToPlace.CanPlace())
         {
             objectToPlace.Place(true);
             Vector3Int start = gridLayout.WorldToCell(objectToPlace.GetStartPosition());

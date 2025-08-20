@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -42,8 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
-  m_GIWorkflowMode: 1
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -66,9 +66,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -610,7 +607,7 @@ CapsuleCollider:
   m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!4 &843814276 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 358930478696116476, guid: a93965bc906a245c49b8905bf8b48fec, type: 3}
+  m_CorrespondingSourceObject: {fileID: 358930478127896550, guid: a93965bc906a245c49b8905bf8b48fec, type: 3}
   m_PrefabInstance: {fileID: 843814273}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &896949122
@@ -755,7 +752,7 @@ CapsuleCollider:
   m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!4 &896949125 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 358930478696116476, guid: a93965bc906a245c49b8905bf8b48fec, type: 3}
+  m_CorrespondingSourceObject: {fileID: 358930478127896550, guid: a93965bc906a245c49b8905bf8b48fec, type: 3}
   m_PrefabInstance: {fileID: 896949122}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &899464898
@@ -900,7 +897,7 @@ CapsuleCollider:
   m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!4 &899464901 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 358930478696116476, guid: a93965bc906a245c49b8905bf8b48fec, type: 3}
+  m_CorrespondingSourceObject: {fileID: 358930478127896550, guid: a93965bc906a245c49b8905bf8b48fec, type: 3}
   m_PrefabInstance: {fileID: 899464898}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1100132515
@@ -1045,7 +1042,7 @@ CapsuleCollider:
   m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!4 &1100132518 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 358930478696116476, guid: a93965bc906a245c49b8905bf8b48fec, type: 3}
+  m_CorrespondingSourceObject: {fileID: 358930478127896550, guid: a93965bc906a245c49b8905bf8b48fec, type: 3}
   m_PrefabInstance: {fileID: 1100132515}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1207775193 stripped
@@ -1053,7 +1050,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6668015293666917239, guid: d7425ed2047e64d8ea6ff79f20bd46f6, type: 3}
   m_PrefabInstance: {fileID: 1722462835}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722462836}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be49d5e8cf7024d6b8f8d5b9872c0f91, type: 3}
@@ -1093,20 +1090,7 @@ MonoBehaviour:
   SuppressInputWhileBlending: 1
   IgnoreTimeScale: 0
   m_ControllerManager:
-    Controllers:
-    - Name: CursorLock
-      Owner: {fileID: 1370871612}
-      Enabled: 1
-      Input:
-        InputAction: {fileID: 0}
-        Gain: 1
-        LegacyInput: Cancel
-        LegacyGain: 1
-        CancelDeltaTime: 0
-      InputValue: 0
-      Driver:
-        AccelTime: 0
-        DecelTime: 0
+    Controllers: []
   PlayerIndex: -1
   AutoEnableInputs: 1
 --- !u!114 &1370871612
@@ -1342,7 +1326,7 @@ CapsuleCollider:
   m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!4 &1499453004 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 358930478696116476, guid: a93965bc906a245c49b8905bf8b48fec, type: 3}
+  m_CorrespondingSourceObject: {fileID: 358930478127896550, guid: a93965bc906a245c49b8905bf8b48fec, type: 3}
   m_PrefabInstance: {fileID: 1499453001}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1516615958
@@ -1702,7 +1686,7 @@ CapsuleCollider:
   m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!4 &1589685679 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 358930478696116476, guid: a93965bc906a245c49b8905bf8b48fec, type: 3}
+  m_CorrespondingSourceObject: {fileID: 358930478127896550, guid: a93965bc906a245c49b8905bf8b48fec, type: 3}
   m_PrefabInstance: {fileID: 1589685676}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1722462835
@@ -2073,7 +2057,7 @@ CapsuleCollider:
   m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!4 &1768537930 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 358930478696116476, guid: a93965bc906a245c49b8905bf8b48fec, type: 3}
+  m_CorrespondingSourceObject: {fileID: 358930478127896550, guid: a93965bc906a245c49b8905bf8b48fec, type: 3}
   m_PrefabInstance: {fileID: 1768537927}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1802572047
@@ -2817,20 +2801,7 @@ MonoBehaviour:
   SuppressInputWhileBlending: 1
   IgnoreTimeScale: 0
   m_ControllerManager:
-    Controllers:
-    - Name: Aim
-      Owner: {fileID: 1889537705}
-      Enabled: 1
-      Input:
-        InputAction: {fileID: -1608118824973676762, guid: 1d6e640e716dc4ff6989b73d02023f2b, type: 3}
-        Gain: 1
-        LegacyInput: Fire3
-        LegacyGain: 1
-        CancelDeltaTime: 0
-      InputValue: 0
-      Driver:
-        AccelTime: 0
-        DecelTime: 0
+    Controllers: []
   PlayerIndex: -1
   AutoEnableInputs: 1
 --- !u!1001 &1972898889
@@ -2975,7 +2946,7 @@ CapsuleCollider:
   m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!4 &1972898892 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 358930478696116476, guid: a93965bc906a245c49b8905bf8b48fec, type: 3}
+  m_CorrespondingSourceObject: {fileID: 358930478127896550, guid: a93965bc906a245c49b8905bf8b48fec, type: 3}
   m_PrefabInstance: {fileID: 1972898889}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &2058541316 stripped

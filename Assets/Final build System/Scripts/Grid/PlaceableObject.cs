@@ -89,4 +89,27 @@ public class PlaceableObject : MonoBehaviour
         Placed = false;
         Destroy(gameObject);
     }
+
+    [SerializeField]private bool canPlace =true;
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Wall")
+        {
+            canPlace = false;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Wall")
+        {
+            canPlace = true;
+        }
+    }
+
+    public bool CanPlace()
+    {
+
+        return canPlace;
+    }
+
 }
